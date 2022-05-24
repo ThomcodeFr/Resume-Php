@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+/********* Header Section  **********/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0%;
+  background: white;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+header h1 {
+  margin-left: 15px;
+  margin-top: 12px;
+}
+
+/********* Container Section  **********/
+
+#container {
+  display: flex;
+}
+
+#container-content {
+  padding: 0 20px 0 20px;
+}
+
+/********* Menu Section  **********/
+
+h2 {
+  text-align: center;
+}
+
+table a {
+  width: 350px;
+  height: 80px;
+  display: flex;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+table a:active {
+  color: rgb(193, 162, 109);
+}
+
+table a {
+  text-decoration: none;
+}
+
+#background-desk {
+  width: 150px;
+}
+
+/********* About Section  **********/
+#about {
+  margin-top: 20px;
+  grid-column: 1/12;
+  grid-row: 1;
+  border-radius: 20px;
+  border: 2px solid rgb(193, 162, 109);
+  padding: 20px;
+  box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+#about p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+/********* experience Section  **********/
+#experience {
+  margin-top: 20px;
+  grid-column: 5/12;
+  grid-row: 2;
+  border-radius: 20px;
+  border: 2px solid rgb(193, 162, 109);
+  padding: 20px;
+  box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.computer {
+  border-radius: 10%;
+  width: 500px;
+  margin-left: 300px;
+  text-align: center;
+}
+
+#experience .table_experience {
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+img {
+  width: 50px;
+  padding: 2px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+/********* Footer Section  **********/
+
+footer .copyright {
+  margin-top: 50px;
+}
+
+footer .copyright p {
+  color: black;
+  bottom: 0;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/********* Media Queries **********/
+
+@media screen and (max-width: 768px) {
+  /** HEADER MEDIA **/
+  header h1 {
+    font-size: 20px;
+    margin-top: 22px;
+  }
+
+  /** MENU MEDIA **/
+  #choice-presentation {
+    font-size: 15px;
+    margin-left: 3px;
+  }
+
+  table a {
+    width: 100%;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+}
